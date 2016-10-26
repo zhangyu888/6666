@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title><{$nav_name}>_<{$config.title}> </title>
+<meta name="keywords" content="<{$config.keywords}>" />
+  <meta name="description" content="<{$config.description}>" />
+   <link rel="stylesheet" href="<{$Think.const.INDEX_CSS_URL}>style.css" />
+  <script src="<{$Think.const.INDEX_JS_URL}>jquery.min.js" type="text/javascript"></script>
+  <!--[if lte IE 9]>
+      <link rel="stylesheet" href="<{$Think.const.INDEX_CSS_URL}>ieCss.css" />
+    <![endif]-->
+  
+  <style>
+  .rightBox {
+    min-height:550px;
+}
+  
+  .pagination li{float:left;}
+  
+  .active,.active-page {
+		display:inline-block;
+		border-radius:3px;
+		margin-left:5px;
+    background-color: #fd742e;
+    border-color: #fd742e;
+    color: #fff !important;
+	height: 34px;
+    min-width: 34px;
+    line-height: 34px;
+    padding: 0 12px;
+    text-align: center;
+	
+	}
+ 	.active {
+    background-color: #fd742e;
+    border-color: #fd742e;
+    color: #fff !important;
+	border-radius: 3px;
+    margin: 5px 0 0 5px;
+	
+}
+  .disabled{display:none;}
+  .time{color: #999;
+    line-height: 18px;
+    overflow: hidden;
+    font-size: 10px;}
+
+  
+  </style>
+  
+  
+  
+  	
+</head>
+<body>
+<!--通用头部 start-->
+ {include file="public/header" /} 
+
+  <!-- 通用头部 end -->
+<!--.container start -->
+<div class="container">        	
+	   <div class="blank30"></div>
+    <div class="main clearfix">
+		<div class="sideBox">
+				<a class="sideBox-nav" href="#">
+			<div class="sideBox-title">图集</div>
+			<div class="sideBox-subtitle opacity4">imgtext</div>
+		</a>
+		<div class="sideBox-list">
+        					
+        			{foreach $cate_list as $cate}
+	      					<a class="sideBox-list-a {if $cate_info.cate_name==$cate.cate_name}on{/if}" href="<{:real_url('imgtext',$is_html,$cate.cate_id)}>"><{$cate.cate_name}></a>
+	      					
+                            
+                      {/foreach}      
+                            
+	      			</div>
+    			</div>        <div class="rightBox">
+        	<ul class="bzcase clf">
+            			
+                        {foreach $imgtext_list as $v}
+                        	<a href="<{:real_url('imgtext',$is_html,'',$v.imgtext_id)}>">
+                        		<li class="bzcase-list">
+        			
+        			<div class="bzcase-list-bd">
+        				<div class="bzcase-list-img">
+        					<img src="<{:explode(',',$v.imgurls)[0]}>" alt="<{$v.imgtext_name}>" />
+        				</div>
+        				
+        			</div>
+                    <div class="mscase-list-hd">
+        				<div class="mscase-list-text">
+        					<div class="bzcase-list-title"><{$v.imgtext_name}></div>
+        					<div class="bzcase-list-subtitle"><{$v.content|mb_substr=0,36}></div>
+                            <div class="time"><{$v.create_time|date="Y-m-d",###}></div>
+        				</div>
+        			</div>
+        		</li>
+                </a>
+                  {/foreach}      	
+                            
+                            </ul>
+            <div class="pgs xiaoyu_pgs clf">
+                <div class="pg">
+        <div class="dux-page">
+          		<{$html_page}><{$imgtext_list->render()}>
+        </div></div>
+            </div>
+        </div>
+    </div>
+    <div class="blank30"></div>
+      
+</div>
+<!--.container end -->
+	
+<!--通用尾部 start-->
+ {include file="public/footer" /} 
+
+</body>
+</html>

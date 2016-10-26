@@ -1,0 +1,3479 @@
+[ 2016-08-27T10:50:52+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.xiangyuan.com/ [运行时间：1.7092251777649s] [吞吐率：0.59req/s] [内存消耗：2,207.83kb] [文件加载：46]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\index\controller\Index.php 9 - 80
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/index\view\index\index.html [ array (
+  0 => 'shop_config',
+  1 => 'contact',
+  2 => 'nav_list',
+  3 => 'count',
+  4 => 'jbcx_list',
+  5 => 'jbys_list',
+  6 => 'jbsl_list',
+  7 => 'best_goods_list',
+  8 => 'notice_list',
+  9 => 'about_us',
+  10 => 'year_options',
+  11 => 'month_options',
+  12 => 'day_options',
+  13 => 'hour_options',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.077797s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.024892s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc LIMIT 5   [ RunTime:0.044391s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.062239s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.002816s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.002940s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.002570s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.002147s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `article_id` = 7  AND `status` = 1 LIMIT 1   [ RunTime:0.016092s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 1  AND `status` = 1 ORDER BY create_time desc LIMIT 8   [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc  [ RunTime:0.009246s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 2  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 3  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 4  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.001493s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000637s ]
+[ error ] [2]Missing argument 1 for app\index\controller\Goods::get_best_googs_list(), called in D:\xampp\htdocs\xiangyuan\application\index\controller\Index.php on line 43 and defined[D:\xampp\htdocs\xiangyuan\application\index\controller\Goods.php:220]
+[ error ] [8]未定义变量 : num[D:\xampp\htdocs\xiangyuan\application\index\controller\Goods.php:222]
+[ error ] [8]未定义变量 : ceshi[D:\xampp\htdocs\xiangyuan\public\runtime\temp\25cd1be80f08caec3a68f0f4b3f4e21c.php:397]
+
+[ 2016-08-27T10:51:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin
+[ log ] www.xiangyuan.com/admin [运行时间：0.27449321746826s] [吞吐率：3.64req/s] [内存消耗：1,782.11kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Index.php 13 - 55
+}
+
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T10:51:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.xiangyuan.com/admin/index/login.html [运行时间：0.089017868041992s] [吞吐率：11.23req/s] [内存消耗：1,655.28kb] [文件加载：35]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Index.php 56 - 79
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T10:51:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/verify/
+[ log ] www.xiangyuan.com/admin/verify/ [运行时间：0.62912011146545s] [吞吐率：1.59req/s] [内存消耗：790.11kb] [文件加载：22]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'verify',
+    2 => NULL,
+  ),
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Verify.php 6 - 12
+}
+
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T10:51:25+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login.html
+[ log ] www.xiangyuan.com/admin/index/login.html [运行时间：0.029017210006714s] [吞吐率：34.46req/s] [内存消耗：1,782.87kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Index.php 56 - 79
+}
+
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T10:51:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.xiangyuan.com/admin/index/login.html [运行时间：0.024866104125977s] [吞吐率：40.22req/s] [内存消耗：1,655.27kb] [文件加载：35]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Index.php 56 - 79
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T10:51:29+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/verify/
+[ log ] www.xiangyuan.com/admin/verify/ [运行时间：0.02927303314209s] [吞吐率：34.16req/s] [内存消耗：790.09kb] [文件加载：22]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'verify',
+    2 => NULL,
+  ),
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Verify.php 6 - 12
+}
+
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T10:51:35+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login.html
+[ log ] www.xiangyuan.com/admin/index/login.html [运行时间：0.24172401428223s] [吞吐率：4.14req/s] [内存消耗：1,975.55kb] [文件加载：43]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Index.php 56 - 79
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_name` = 'admin' LIMIT 1   [ RunTime:0.001132s ]
+
+[ 2016-08-27T10:51:35+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ log ] www.xiangyuan.com/admin/index/index.html [运行时间：0.092833042144775s] [吞吐率：10.77req/s] [内存消耗：1,900.30kb] [文件加载：39]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Index.php 13 - 55
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\index\index.html [ array (
+  0 => 'auth_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  is_show=1 )  [ RunTime:0.000908s ]
+
+[ 2016-08-27T10:51:35+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/info
+[ log ] www.xiangyuan.com/admin/index/info [运行时间：0.48753595352173s] [吞吐率：2.05req/s] [内存消耗：2,008.83kb] [文件加载：44]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'info',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method info ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Index.php 85 - 114
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\index\info.html [ array (
+  0 => 'user_status',
+  1 => 'info',
+  2 => 'today_order',
+  3 => 'before_order',
+  4 => 'now_order',
+  5 => 'now_user',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=1  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.051313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=2  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.001576s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=3  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.002420s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order` WHERE  (  status>0 AND status<4  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=1  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=2  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=3  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order` WHERE  (  status>0 AND status<4  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=1  ) LIMIT 1   [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=2  ) LIMIT 1   [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=3  ) LIMIT 1   [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order` WHERE  (  status>0 AND status<4  ) LIMIT 1   [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 0 LIMIT 1   [ RunTime:0.007031s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 1 LIMIT 1   [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 2 LIMIT 1   [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 3 LIMIT 1   [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_money_send` WHERE  `status` = 0 LIMIT 1   [ RunTime:0.046755s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` LIMIT 1   [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001176s ]
+[ error ] [8]未定义索引 : apache[D:\xampp\htdocs\xiangyuan\public\runtime\temp\0f04dd5f8e9aa9ae1bee6c78c97796a8.php:122]
+
+[ 2016-08-27T10:51:37+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/info
+[ log ] www.xiangyuan.com/admin/index/info [运行时间：0.11195802688599s] [吞吐率：8.93req/s] [内存消耗：2,008.28kb] [文件加载：44]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'info',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method info ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Index.php 85 - 114
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\index\info.html [ array (
+  0 => 'user_status',
+  1 => 'info',
+  2 => 'today_order',
+  3 => 'before_order',
+  4 => 'now_order',
+  5 => 'now_user',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=1  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=2  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=3  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order` WHERE  (  status>0 AND status<4  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=1  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=2  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=3  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order` WHERE  (  status>0 AND status<4  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=1  ) LIMIT 1   [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=2  ) LIMIT 1   [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=3  ) LIMIT 1   [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order` WHERE  (  status>0 AND status<4  ) LIMIT 1   [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 0 LIMIT 1   [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 1 LIMIT 1   [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 2 LIMIT 1   [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 3 LIMIT 1   [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_money_send` WHERE  `status` = 0 LIMIT 1   [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` LIMIT 1   [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000870s ]
+[ error ] [8]未定义索引 : apache[D:\xampp\htdocs\xiangyuan\public\runtime\temp\0f04dd5f8e9aa9ae1bee6c78c97796a8.php:122]
+
+[ 2016-08-27T10:51:40+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/config/set
+[ log ] www.xiangyuan.com/admin/config/set [运行时间：0.58017992973328s] [吞吐率：1.72req/s] [内存消耗：1,959.73kb] [文件加载：41]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'set',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ RUN ] Method [ <user> public method set ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Config.php 17 - 83
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\config\set.html [ array (
+  0 => 'kuaidi_list',
+  1 => 'domain',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000850s ]
+[ sql ] [ SQL ] UPDATE `xy_config`  SET `access_token`='cOwwqJT__9LRIQoLi3_a4wcAA-f62zn_WfqZgkAzMOUwvpF5WjQll4l62X19QjQXVOMbMbyZyJpHB6unhnX5RvT0qnP51ZX2or8EZ8NK91x0izVk0rJdLztwAmYVywB6FHPaAAALNV',`expire_time`='1472266300'  WHERE  `id` = '1'      [ RunTime:0.037459s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='config' and auth_a='set' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.031786s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = 1 LIMIT 1   [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000581s ]
+
+[ 2016-08-27T10:52:21+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/database/showlist
+[ log ] www.xiangyuan.com/admin/database/showlist [运行时间：0.14837694168091s] [吞吐率：6.74req/s] [内存消耗：2,030.91kb] [文件加载：42]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Database.php 13 - 22
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\database\showlist.html [ array (
+  0 => 'database_list',
+  1 => 'html_page',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001032s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='database' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 1   [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 0,20   [ RunTime:0.000324s ]
+
+[ 2016-08-27T10:52:21+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/wechatmenu/set
+[ log ] www.xiangyuan.com/admin/wechatmenu/set [运行时间：0.15240716934204s] [吞吐率：6.56req/s] [内存消耗：2,203.85kb] [文件加载：46]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wechatmenu',
+    2 => 'set',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method set ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Wechatmenu.php 15 - 214
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\wechatmenu\set.html [ array (
+  0 => 'menu1',
+  1 => 'menu2',
+  2 => 'menu3',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='wechatmenu' and auth_a='set' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_wechat_menu` WHERE  `id` = 1 LIMIT 1   [ RunTime:0.001071s ]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : type[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]未定义索引 : type[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]未定义索引 : type[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]未定义索引 : key[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]未定义变量 : config[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:111]
+
+[ 2016-08-27T10:52:22+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/database/showlist
+[ log ] www.xiangyuan.com/admin/database/showlist [运行时间：0.054003000259399s] [吞吐率：18.52req/s] [内存消耗：1,884.59kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Database.php 13 - 22
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\database\showlist.html [ array (
+  0 => 'database_list',
+  1 => 'html_page',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='database' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 1   [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 0,20   [ RunTime:0.000318s ]
+
+[ 2016-08-27T10:52:25+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/wechatmenu/set
+[ log ] www.xiangyuan.com/admin/wechatmenu/set [运行时间：0.073174953460693s] [吞吐率：13.67req/s] [内存消耗：2,031.79kb] [文件加载：44]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wechatmenu',
+    2 => 'set',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method set ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Wechatmenu.php 15 - 214
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\wechatmenu\set.html [ array (
+  0 => 'menu1',
+  1 => 'menu2',
+  2 => 'menu3',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='wechatmenu' and auth_a='set' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_wechat_menu` WHERE  `id` = 1 LIMIT 1   [ RunTime:0.000387s ]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : type[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]未定义索引 : type[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]未定义索引 : type[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]未定义索引 : key[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]未定义变量 : config[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:111]
+
+[ 2016-08-27T10:52:26+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/config/set
+[ log ] www.xiangyuan.com/admin/config/set [运行时间：0.051842927932739s] [吞吐率：19.29req/s] [内存消耗：1,919.50kb] [文件加载：39]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'set',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method set ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Config.php 17 - 83
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\config\set.html [ array (
+  0 => 'kuaidi_list',
+  1 => 'domain',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='config' and auth_a='set' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = 1 LIMIT 1   [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000387s ]
+
+[ 2016-08-27T10:52:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/info
+[ log ] www.xiangyuan.com/admin/index/info [运行时间：0.092605113983154s] [吞吐率：10.80req/s] [内存消耗：2,008.28kb] [文件加载：44]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'info',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method info ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Index.php 85 - 114
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\index\info.html [ array (
+  0 => 'user_status',
+  1 => 'info',
+  2 => 'today_order',
+  3 => 'before_order',
+  4 => 'now_order',
+  5 => 'now_user',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=1  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=2  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=3  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order` WHERE  (  status>0 AND status<4  and pay_time >1472227200 and pay_time < 1472313600 ) LIMIT 1   [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=1  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=2  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=3  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order_test` WHERE  (  status>0 and  status<4  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order` WHERE  (  status>0 AND status<4  and pay_time >1472140800 and pay_time < 1472227200 ) LIMIT 1   [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=1  ) LIMIT 1   [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=2  ) LIMIT 1   [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE  (  status=3  ) LIMIT 1   [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `xy_order` WHERE  (  status>0 AND status<4  ) LIMIT 1   [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 0 LIMIT 1   [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 1 LIMIT 1   [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 2 LIMIT 1   [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE  `user_level` = 3 LIMIT 1   [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_money_send` WHERE  `status` = 0 LIMIT 1   [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_user` LIMIT 1   [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000841s ]
+[ error ] [8]未定义索引 : apache[D:\xampp\htdocs\xiangyuan\public\runtime\temp\0f04dd5f8e9aa9ae1bee6c78c97796a8.php:122]
+
+[ 2016-08-27T10:52:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/config/set
+[ log ] www.xiangyuan.com/admin/config/set [运行时间：0.052663087844849s] [吞吐率：18.99req/s] [内存消耗：1,919.50kb] [文件加载：39]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'set',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method set ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Config.php 17 - 83
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\config\set.html [ array (
+  0 => 'kuaidi_list',
+  1 => 'domain',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='config' and auth_a='set' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = 1 LIMIT 1   [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000383s ]
+
+[ 2016-08-27T11:26:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/showlist
+[ log ] www.xiangyuan.com/admin/order/showlist [运行时间：0.28316497802734s] [吞吐率：3.53req/s] [内存消耗：2,249.79kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 18 - 41
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\showlist.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+  3 => 'shop_config',
+  4 => 'kuaidi_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.045240s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.026893s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (24,311,0) )  [ RunTime:0.011979s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,383,3230) )  [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.001577s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000628s ]
+[ error ] [8]未定义变量 : stime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]未定义变量 : etime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:72]
+
+[ 2016-08-27T11:26:50+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/showlist
+[ log ] www.xiangyuan.com/admin/order/showlist [运行时间：0.078314065933228s] [吞吐率：12.77req/s] [内存消耗：2,249.79kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 18 - 41
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\showlist.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+  3 => 'shop_config',
+  4 => 'kuaidi_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (24,311,0) )  [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,383,3230) )  [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000369s ]
+[ error ] [8]未定义变量 : stime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]未定义变量 : etime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:72]
+
+[ 2016-08-27T14:19:07+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/showlist
+[ log ] www.xiangyuan.com/admin/order/showlist [运行时间：0.69700002670288s] [吞吐率：1.43req/s] [内存消耗：2,290.66kb] [文件加载：47]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 18 - 41
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\showlist.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+  3 => 'shop_config',
+  4 => 'kuaidi_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001570s ]
+[ sql ] [ SQL ] UPDATE `xy_config`  SET `access_token`='U6B274eDqcx8e5WEl7d4AaWkzEoPfHvAsTGQvB2iXsiUVwAMac-kqaU3u9WwQ2E9Hk81tbHpNrPu2KG-TbFHVtCVZ23ZNvDpz2zJTBxucw4Zu84ZpJ5Q_Wi_jC0gWby_NQMcAAAHKG',`expire_time`='1472278746'  WHERE  `id` = '1'      [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.025661s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.002101s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (24,311,0) )  [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,383,3230) )  [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000596s ]
+[ error ] [8]未定义变量 : stime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]未定义变量 : etime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:72]
+
+[ 2016-08-27T14:19:07+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.14525103569031s] [吞吐率：6.88req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:22:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/order_test_list
+[ log ] www.xiangyuan.com/admin/order/order_test_list [运行时间：0.10158491134644s] [吞吐率：9.84req/s] [内存消耗：2,155.60kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'order_test_list',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method order_test_list ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 392 - 407
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\order_test_list.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='order_test_list' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order_test o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order_test o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (17,233,0) )  [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000408s ]
+[ error ] [8]Use of undefined constant IS_GET - assumed 'IS_GET'[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:396]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:346]
+
+[ 2016-08-27T14:22:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.030079126358032s] [吞吐率：33.25req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:22:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/showlist
+[ log ] www.xiangyuan.com/admin/order/showlist [运行时间：0.083523988723755s] [吞吐率：11.97req/s] [内存消耗：2,249.79kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 18 - 41
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\showlist.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+  3 => 'shop_config',
+  4 => 'kuaidi_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.002039s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001762s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (24,311,0) )  [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,383,3230) )  [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000422s ]
+[ error ] [8]未定义变量 : stime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]未定义变量 : etime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:72]
+
+[ 2016-08-27T14:22:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.029259920120239s] [吞吐率：34.18req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:22:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/main/showlist
+[ log ] www.xiangyuan.com/admin/main/showlist [运行时间：0.26350402832031s] [吞吐率：3.80req/s] [内存消耗：2,110.08kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Main.php 12 - 49
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\main\showlist.html [ array (
+  0 => 'hour_arr',
+  1 => 'wuxing_arr',
+  2 => 'main_list',
+  3 => 'html_page',
+  4 => 'shop_config',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='main' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_main` WHERE  (   1  ) LIMIT 1   [ RunTime:0.013523s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main` WHERE  (   1  ) ORDER BY main_id desc LIMIT 0,20   [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_hour`  [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '18' LIMIT 1    [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '17' LIMIT 1    [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '16' LIMIT 1    [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '15' LIMIT 1    [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '12' LIMIT 1    [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '3' LIMIT 1    [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '1' LIMIT 1    [ RunTime:0.000266s ]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+
+[ 2016-08-27T14:22:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.069857120513916s] [吞吐率：14.31req/s] [内存消耗：1,741.21kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:22:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/main/add
+[ log ] www.xiangyuan.com/admin/main/add [运行时间：0.1604950428009s] [吞吐率：6.23req/s] [内存消耗：2,074.63kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'add',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method add ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Main.php 54 - 164
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\main\add.html [ array (
+  0 => 'month_options',
+  1 => 'main',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='main' and auth_a='add' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_month`  [ RunTime:0.001077s ]
+[ error ] [8]未定义索引 : year[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:36]
+[ error ] [8]未定义变量 : option_monthday[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:40]
+[ error ] [8]未定义索引 : start[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:45]
+[ error ] [8]未定义索引 : end[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:47]
+[ error ] [8]未定义变量 : option_hour[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:50]
+[ error ] [8]未定义索引 : result[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:70]
+[ error ] [8]未定义索引 : wxyq[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:76]
+[ error ] [8]未定义索引 : wxyq_2[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:78]
+[ error ] [8]未定义索引 : wzxs[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:82]
+[ error ] [8]未定义索引 : wzxs_2[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:84]
+[ error ] [8]未定义索引 : wzqz[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:88]
+[ error ] [8]未定义索引 : wzqz_2[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:90]
+[ error ] [8]未定义索引 : problem[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:94]
+[ error ] [8]未定义索引 : problem_2[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:96]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:115]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:117]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:123]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:125]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:130]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:132]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:137]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:139]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:144]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:146]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:151]
+[ error ] [8]未定义变量 : main_info[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:153]
+[ error ] [8]未定义索引 : que_wuxing_id[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:261]
+[ error ] [8]未定义索引 : guo_wuxing_id[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:262]
+[ error ] [8]未定义索引 : monthday_id[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:263]
+[ error ] [8]未定义索引 : info_id[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:264]
+[ error ] [8]未定义索引 : main_id[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2e9ac53552f6b751c6a7e351fa9c0ade.php:266]
+
+[ 2016-08-27T14:22:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.031357049942017s] [吞吐率：31.89req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:22:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/main/wuxing
+[ log ] www.xiangyuan.com/admin/main/wuxing [运行时间：0.16363191604614s] [吞吐率：6.11req/s] [内存消耗：2,097.11kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'wuxing',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method wuxing ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Main.php 221 - 313
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\main\wuxing.html [ array (
+  0 => 'wuxing_1',
+  1 => 'wuxing_2',
+  2 => 'wuxing_3',
+  3 => 'wuxing_4',
+  4 => 'wuxing_5',
+  5 => 'wuxing_6',
+  6 => 'wuxing_7',
+  7 => 'wuxing_8',
+  8 => 'wuxing_9',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.005386s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='main' and auth_a='wuxing' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_wuxing`  [ RunTime:0.000645s ]
+[ error ] [8]未定义变量 : wuxing_10[D:\xampp\htdocs\xiangyuan\public\runtime\temp\ba83e699346d9392a04a9948bf87d0d1.php:346]
+[ error ] [8]未定义变量 : wuxing_10[D:\xampp\htdocs\xiangyuan\public\runtime\temp\ba83e699346d9392a04a9948bf87d0d1.php:351]
+[ error ] [8]未定义变量 : wuxing_10[D:\xampp\htdocs\xiangyuan\public\runtime\temp\ba83e699346d9392a04a9948bf87d0d1.php:356]
+[ error ] [8]未定义变量 : wuxing_10[D:\xampp\htdocs\xiangyuan\public\runtime\temp\ba83e699346d9392a04a9948bf87d0d1.php:360]
+[ error ] [8]未定义变量 : wuxing_10[D:\xampp\htdocs\xiangyuan\public\runtime\temp\ba83e699346d9392a04a9948bf87d0d1.php:364]
+[ error ] [8]未定义变量 : wuxing_10[D:\xampp\htdocs\xiangyuan\public\runtime\temp\ba83e699346d9392a04a9948bf87d0d1.php:368]
+
+[ 2016-08-27T14:22:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/main/month
+[ log ] www.xiangyuan.com/admin/main/month [运行时间：0.11732006072998s] [吞吐率：8.52req/s] [内存消耗：2,066.90kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'month',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method month ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Main.php 195 - 219
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\main\month.html [ array (
+  0 => 'month_list',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='main' and auth_a='month' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_month`  [ RunTime:0.000331s ]
+[ error ] [8]未定义变量 : key[D:\xampp\htdocs\xiangyuan\public\runtime\temp\c9a64b6cd275a2707805efe782ce7bf0.php:47]
+[ error ] [8]未定义变量 : key[D:\xampp\htdocs\xiangyuan\public\runtime\temp\c9a64b6cd275a2707805efe782ce7bf0.php:47]
+[ error ] [8]未定义变量 : key[D:\xampp\htdocs\xiangyuan\public\runtime\temp\c9a64b6cd275a2707805efe782ce7bf0.php:47]
+[ error ] [8]未定义变量 : key[D:\xampp\htdocs\xiangyuan\public\runtime\temp\c9a64b6cd275a2707805efe782ce7bf0.php:47]
+[ error ] [8]未定义变量 : key[D:\xampp\htdocs\xiangyuan\public\runtime\temp\c9a64b6cd275a2707805efe782ce7bf0.php:47]
+[ error ] [8]未定义变量 : key[D:\xampp\htdocs\xiangyuan\public\runtime\temp\c9a64b6cd275a2707805efe782ce7bf0.php:47]
+[ error ] [8]未定义变量 : active_goods_count[D:\xampp\htdocs\xiangyuan\public\runtime\temp\c9a64b6cd275a2707805efe782ce7bf0.php:52]
+
+[ 2016-08-27T14:22:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.028743982315063s] [吞吐率：34.79req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:22:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/main/showlist
+[ log ] www.xiangyuan.com/admin/main/showlist [运行时间：0.076462984085083s] [吞吐率：13.08req/s] [内存消耗：2,110.08kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Main.php 12 - 49
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\main\showlist.html [ array (
+  0 => 'hour_arr',
+  1 => 'wuxing_arr',
+  2 => 'main_list',
+  3 => 'html_page',
+  4 => 'shop_config',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.002575s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='main' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_main` WHERE  (   1  ) LIMIT 1   [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main` WHERE  (   1  ) ORDER BY main_id desc LIMIT 0,20   [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_hour`  [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '18' LIMIT 1    [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '17' LIMIT 1    [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '16' LIMIT 1    [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '15' LIMIT 1    [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '12' LIMIT 1    [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '3' LIMIT 1    [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '1' LIMIT 1    [ RunTime:0.000313s ]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+
+[ 2016-08-27T14:22:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.029294013977051s] [吞吐率：34.14req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:23:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/showlist
+[ log ] www.xiangyuan.com/admin/order/showlist [运行时间：0.13575482368469s] [吞吐率：7.37req/s] [内存消耗：2,249.79kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 18 - 41
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\showlist.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+  3 => 'shop_config',
+  4 => 'kuaidi_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.001318s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (24,311,0) )  [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,383,3230) )  [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000507s ]
+[ error ] [8]未定义变量 : stime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]未定义变量 : etime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:72]
+
+[ 2016-08-27T14:23:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.030634880065918s] [吞吐率：32.64req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:23:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/showlist
+[ log ] www.xiangyuan.com/admin/order/showlist [运行时间：0.082059860229492s] [吞吐率：12.19req/s] [内存消耗：2,249.79kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 18 - 41
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\showlist.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+  3 => 'shop_config',
+  4 => 'kuaidi_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.001238s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (24,311,0) )  [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,383,3230) )  [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000409s ]
+[ error ] [8]未定义变量 : stime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]未定义变量 : etime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:72]
+
+[ 2016-08-27T14:23:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.028784990310669s] [吞吐率：34.74req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:23:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/main/showlist
+[ log ] www.xiangyuan.com/admin/main/showlist [运行时间：0.099483013153076s] [吞吐率：10.05req/s] [内存消耗：2,110.08kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Main.php 12 - 49
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\main\showlist.html [ array (
+  0 => 'hour_arr',
+  1 => 'wuxing_arr',
+  2 => 'main_list',
+  3 => 'html_page',
+  4 => 'shop_config',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.001102s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='main' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.001102s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_main` WHERE  (   1  ) LIMIT 1   [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main` WHERE  (   1  ) ORDER BY main_id desc LIMIT 0,20   [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_hour`  [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '18' LIMIT 1    [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '17' LIMIT 1    [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '16' LIMIT 1    [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '15' LIMIT 1    [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '12' LIMIT 1    [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '3' LIMIT 1    [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '1' LIMIT 1    [ RunTime:0.000305s ]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+
+[ 2016-08-27T14:23:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.029219150543213s] [吞吐率：34.22req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:23:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/showlist
+[ log ] www.xiangyuan.com/admin/order/showlist [运行时间：0.079832077026367s] [吞吐率：12.53req/s] [内存消耗：2,249.79kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 18 - 41
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\showlist.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+  3 => 'shop_config',
+  4 => 'kuaidi_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (24,311,0) )  [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,383,3230) )  [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000364s ]
+[ error ] [8]未定义变量 : stime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]未定义变量 : etime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:72]
+
+[ 2016-08-27T14:23:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.027827978134155s] [吞吐率：35.94req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:23:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/order_test_list
+[ log ] www.xiangyuan.com/admin/order/order_test_list [运行时间：0.095893144607544s] [吞吐率：10.43req/s] [内存消耗：2,155.60kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'order_test_list',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method order_test_list ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 392 - 407
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\order_test_list.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='order_test_list' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order_test o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order_test o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (17,233,0) )  [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000427s ]
+[ error ] [8]Use of undefined constant IS_GET - assumed 'IS_GET'[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:396]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:346]
+
+[ 2016-08-27T14:23:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.029238939285278s] [吞吐率：34.20req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:23:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/order/showlist
+[ log ] www.xiangyuan.com/admin/order/showlist [运行时间：0.084908962249756s] [吞吐率：11.78req/s] [内存消耗：2,249.79kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php 18 - 41
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\order\showlist.html [ array (
+  0 => 'order_list',
+  1 => 'html_page',
+  2 => 'order_status',
+  3 => 'shop_config',
+  4 => 'kuaidi_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='order' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT o.*,a.province,a.city,a.district,a.address,a.consignee,u.user_name,u.user_id,a.tel FROM xy_order o INNER JOIN xy_address a ON o.address_id = a.address_id INNER JOIN xy_user u ON o.user_id=u.user_id  WHERE  (   1  ) ORDER BY pay_time desc,order_id desc LIMIT 0,20   [ RunTime:0.001114s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (24,311,0) )  [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,383,3230) )  [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3409) )  [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_region` WHERE  (  region_id in (2,393,3320) )  [ RunTime:0.001548s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000392s ]
+[ error ] [8]未定义变量 : stime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]未定义变量 : etime[D:\xampp\htdocs\xiangyuan\application\admin\controller\Order.php:31]
+[ error ] [8]Undefined offset: 2[D:\xampp\htdocs\xiangyuan\application\admin\model\Order.php:72]
+
+[ 2016-08-27T14:23:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.030207872390747s] [吞吐率：33.10req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T14:23:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/main/showlist
+[ log ] www.xiangyuan.com/admin/main/showlist [运行时间：0.092140913009644s] [吞吐率：10.85req/s] [内存消耗：2,110.08kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Main.php 12 - 49
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\main\showlist.html [ array (
+  0 => 'hour_arr',
+  1 => 'wuxing_arr',
+  2 => 'main_list',
+  3 => 'html_page',
+  4 => 'shop_config',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='main' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_main` WHERE  (   1  ) LIMIT 1   [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main` WHERE  (   1  ) ORDER BY main_id desc LIMIT 0,20   [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_hour`  [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '18' LIMIT 1    [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '17' LIMIT 1    [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '16' LIMIT 1    [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '15' LIMIT 1    [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '12' LIMIT 1    [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '3' LIMIT 1    [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_main_monthday` WHERE  `monthday_id` = '1' LIMIT 1    [ RunTime:0.000321s ]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+[ error ] [8]Undefined offset: 0[D:\xampp\htdocs\xiangyuan\public\runtime\temp\b6a742f583d21f2588c17c28f8ae91a0.php:108]
+
+[ 2016-08-27T14:23:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.js.map
+[ log ] www.xiangyuan.com/admin/index/index.js.map [运行时间：0.029850006103516s] [吞吐率：33.50req/s] [内存消耗：1,741.24kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index.js.map',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-08-27T16:32:22+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/user/showlist
+[ log ] www.xiangyuan.com/admin/user/showlist [运行时间：0.57806992530823s] [吞吐率：1.73req/s] [内存消耗：2,215.45kb] [文件加载：47]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\User.php 14 - 35
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\user\showlist.html [ array (
+  0 => 'user_list',
+  1 => 'html_page',
+  2 => 'user_status',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000901s ]
+[ sql ] [ SQL ] UPDATE `xy_config`  SET `access_token`='odr7Mr8O1WGn-FTQwt9l_NOM3OaQY01sq6CUAhT0OgEHUIKNEbRIqg8E1DxKD9Er1c5FxIKP-1n9-ytbN84bbej-1qFyuqrSXXeaQVIRZngeeowwc0s2CYWOtnTzpQMuYQIbADAHZR',`expire_time`='1472286742'  WHERE  `id` = '1'      [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='user' and auth_a='showlist' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM xy_user u INNER JOIN xy_wechat_user w ON u.wechat_user_id = w.wechat_user_id  WHERE  (   1  ) LIMIT 1   [ RunTime:0.038836s ]
+[ sql ] [ SQL ] SELECT * FROM xy_user u INNER JOIN xy_wechat_user w ON u.wechat_user_id = w.wechat_user_id  WHERE  (   1  ) ORDER BY user_id desc LIMIT 0,20   [ RunTime:0.008954s ]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+[ error ] [8]A non well formed numeric value encountered[D:\xampp\htdocs\xiangyuan\public\runtime\temp\83b21596d9e0ddb38a8bf41da15fdfe7.php:211]
+
+[ 2016-08-27T16:32:25+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/config/set
+[ log ] www.xiangyuan.com/admin/config/set [运行时间：0.19635701179504s] [吞吐率：5.09req/s] [内存消耗：1,919.52kb] [文件加载：39]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'set',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ RUN ] Method [ <user> public method set ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Config.php 17 - 83
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\config\set.html [ array (
+  0 => 'kuaidi_list',
+  1 => 'domain',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='config' and auth_a='set' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = 1 LIMIT 1   [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_kuaidi100`  [ RunTime:0.000454s ]
+
+[ 2016-08-27T18:36:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/wechatmenu/set
+[ log ] www.xiangyuan.com/admin/wechatmenu/set [运行时间：0.53779196739197s] [吞吐率：1.86req/s] [内存消耗：2,072.60kb] [文件加载：46]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wechatmenu',
+    2 => 'set',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ RUN ] Method [ <user> public method set ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\admin\controller\Wechatmenu.php 15 - 214
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/admin\view\wechatmenu\set.html [ array (
+  0 => 'menu1',
+  1 => 'menu2',
+  2 => 'menu3',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000971s ]
+[ sql ] [ SQL ] UPDATE `xy_config`  SET `access_token`='4GX8FTtvp5MXSAl8-85OyBtJn2SGmWMeh9uCCnY25M2Czzs3cyA7wko8hdKIwOyZLi4Jnv66qHlbHjiKdQxClcovUCv3ZAFlFOeSYADHrrUYKNcAJAKWZ',`expire_time`='1472294214'  WHERE  `id` = '1'      [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_auth` WHERE  (  auth_c='wechatmenu' and auth_a='set' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_wechat_menu` WHERE  `id` = 1 LIMIT 1   [ RunTime:0.000431s ]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:61]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:64]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:67]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:69]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:71]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:77]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:80]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:83]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:85]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : sub_button[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:87]
+[ error ] [8]未定义索引 : type[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]未定义索引 : type[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]未定义索引 : type[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]未定义索引 : key[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:93]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]Undefined offset: 4[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:104]
+[ error ] [8]未定义变量 : config[D:\xampp\htdocs\xiangyuan\public\runtime\temp\76a200ce40b5a20dffd99ec62afb40b5.php:111]
+

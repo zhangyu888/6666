@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <title>会员列表</title>
+
+       <link rel="stylesheet" href="<{$Think.const.ADMIN_CSS_URL}>common.css">
+<link rel="stylesheet" href="<{$Think.const.ADMIN_CSS_URL}>main.css?55">
+<script type="text/javascript" src="<{$Think.const.ADMIN_JS_URL}>jquery-1.9.1.min.js"></script>
+
+    </head>
+    <body>
+          
+          
+        <div id='dialog-modal'></div>
+        <div class="container">
+    <div id="button" class="mt10">
+       <input type="button" id="btn1" class="btn btn82 btn_checked" value="全选"> 
+       <input type="button" id="btn2" class="btn btn82 btn_nochecked" value="取消">
+
+    </div>
+    <div id="search_bar" class="mt10">
+       <div class="box">
+
+          <div class="box_buser">
+ 
+
+            <div class="box_center pt10 pb10">
+
+              <table class="form_table" buser="0" cellpadding="0" cellspacing="0">
+
+                <tr>
+                      <form action="/index.php/admin/user/showlist" method="get" id="search">
+                   
+                
+                 
+                  <td>用户名</td>
+                  <td><input type="text" name="keyword" class="input-text lh25" size="30"></td>
+                  <td><input name="sel" type="submit" value="查询" class="ext_btn ext_btn_submit"></td>
+                 
+                  
+                </form>
+          
+                  
+              
+                </tr>
+           </table>
+          
+
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+     <div id="table" class="mt10">
+
+        <div class="box span10 oh">
+
+              <table width="100%" buser="0" cellpadding="0" cellspacing="0" class="list_table">
+
+                <tr class="tr">
+
+                    <th width="30">编号</th>
+                    <th width="30">选择</th>
+                 <th width="40">用户名</th>
+                         <th width="40">昵称</th>
+                          
+                         <th width="40">真实姓名</th>
+                         <th width="40">性别</th>
+                       
+                        <th width="40">手机号码</th>
+                        <th width="40">地址</th>
+                       <th width="50">生日</th>
+                        <th width="50">邮箱</th> 
+                        <th width="70">加入时间</th>
+
+                  <th width="150">操作</th>
+                   <!-- <th width="50"><a href="movie.php?weekdjs=desc" title="降序">上周点击</a></th>
+                   <th width="50"><a href="movie.php?addweekdjs=desc" title="降序">本周点击</a></th>  -->
+
+                    </tr>
+                   
+  {foreach $user_list as $v}
+               
+                        <tr class="tr">
+                             <td><{$v.user_id}></td>
+                   <td class="td_center"><input type="checkbox" name="checkbox" value="<{$v.user_id}>"></td>
+                   <td><{$v.user_name}></td>
+                  <td><{$v.nickname}><!--<font style="color:red">&nbsp;<{$v.note}></font>--></td>
+                   <td><{$v.realname}></td>
+                    <td>{if $v.sex==1}男{else}女{/if}</td>
+                       <td><{$v.tel}></td>
+                    <td><{$v.address}></td>
+                    <th><{$v.birthday|date= "m-d",###}></th> 
+                <td><{$v.email}></td>
+                       
+        <td><{$v.create_time|date= "Y-m-d H:i:s",###}></td>                   
+
+
+                    <td>
+<!--<input class="input-text" type="text" value=""  placeholder="填写备注" id="usernote<{$v.user_id}>" style="display:none;">
+  <a href="javascript:note(<{$v.user_id}>)">备注</a>&nbsp;|&nbsp;--><a href="javascript:delete_item(<{$v.user_id}>)">删除</a>
+
+</td>
+                
+                 </tr>
+                    {/foreach}
+
+
+                   
+                  
+                  
+            </table>
+              <div class="page mt10">
+               <div class="pagination">
+             <{$html_page}>
+                </div> 
+
+              </div>
+
+        </div>
+
+     </div>
+
+   </div> 
+
+
+         <script>
+		 
+	function delete_item(id){
+		
+		if(confirm('是否删除')){
+			
+			$.post('/admin/user/del_ajax',{user_id:id},function(data){
+		 		
+				if(data){
+	  	        location.href="/admin/user/showlist";
+				}
+				
+				})
+			
+			
+			
+			}
+		
+		
+		
+		
+		
+		
+		}	 
+		 
+		 
+		 
+function note(userId){
+  var note=$("#usernote"+userId);
+  var content=$.trim(note.val());
+note.show();
+if(content)
+    $.ajax({
+        url:"/admin/user/ajax_add_note",
+        data:{"user_id":userId,"note":content},
+        type:"POST",
+        dataType:"json",
+        success: function(data){
+           alert(data.msg);
+          location.href=location;
+        
+            //location.href=location;
+        },
+        error:function(){
+            alert('error')}
+    })
+  }
+
+      $(document).ready(function(e) {
+         $("#btn1").click(function(){
+            $("[name='checkbox']").prop("checked", function( i, val ) {
+          return !val;
+           //即true变false。flase变true
+        });
+         });
+
+         $("#btn2").click(function(){
+
+                 $("[name='checkbox']").prop("checked", function( i, val ) {
+                      return !val;
+                      
+                    });
+         });
+
+        
+          
+      
+      }); 
+
+           </script>
+        
+  
+   
+    </body>
+</html>

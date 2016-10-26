@@ -1,0 +1,123 @@
+[ 2016-07-20T14:43:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin
+[ log ] www.xy.com/admin [运行时间：0.10424995422363s] [吞吐率：9.59req/s] [内存消耗：1,851.36kb] [文件加载：43]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 13 - 55
+}
+
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-07-20T14:43:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.xy.com/admin/index/login.html [运行时间：0.046258926391602s] [吞吐率：21.62req/s] [内存消耗：1,877.92kb] [文件加载：41]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 56 - 79
+}
+
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-07-20T14:43:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/verify/
+[ log ] www.xy.com/admin/verify/ [运行时间：0.050935029983521s] [吞吐率：19.63req/s] [内存消耗：890.73kb] [文件加载：27]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'verify',
+    2 => NULL,
+  ),
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Verify.php 6 - 12
+}
+
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+

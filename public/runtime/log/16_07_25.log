@@ -1,0 +1,246 @@
+[ 2016-07-25T10:29:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.xy.com/admin/index/login.html [运行时间：0.083685874938965s] [吞吐率：11.95req/s] [内存消耗：1,654.69kb] [文件加载：35]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 56 - 79
+}
+
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-07-25T10:29:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/verify/
+[ log ] www.xy.com/admin/verify/ [运行时间：0.047092914581299s] [吞吐率：21.23req/s] [内存消耗：790.00kb] [文件加载：22]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'verify',
+    2 => NULL,
+  ),
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Verify.php 6 - 12
+}
+
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-07-25T10:43:39+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login.html
+[ log ] www.xy.com/admin/index/login.html [运行时间：0.15084910392761s] [吞吐率：6.63req/s] [内存消耗：1,974.48kb] [文件加载：43]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 56 - 79
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_name` = 'admin' LIMIT 1   [ RunTime:0.005121s ]
+
+[ 2016-07-25T10:43:39+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ log ] www.xy.com/admin/index/index.html [运行时间：0.12688302993774s] [吞吐率：7.88req/s] [内存消耗：1,890.35kb] [文件加载：39]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 13 - 55
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\index\index.html [ array (
+  0 => 'auth_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.003099s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_auth` WHERE  (  is_show=1 )  [ RunTime:0.002536s ]
+
+[ 2016-07-25T10:43:40+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/info
+[ log ] www.xy.com/admin/index/info [运行时间：0.20445513725281s] [吞吐率：4.89req/s] [内存消耗：1,999.71kb] [文件加载：44]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'info',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method info ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 85 - 114
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\index\info.html [ array (
+  0 => 'user_status',
+  1 => 'info',
+  2 => 'today_order',
+  3 => 'before_order',
+  4 => 'now_order',
+  5 => 'now_user',
+) ]
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=1  and pay_time >1469376000 and pay_time < 1469462400 ) LIMIT 1   [ RunTime:0.003573s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=2  and pay_time >1469376000 and pay_time < 1469462400 ) LIMIT 1   [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=3  and pay_time >1469376000 and pay_time < 1469462400 ) LIMIT 1   [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order_test` WHERE  (  status>0 and  status<4  and pay_time >1469376000 and pay_time < 1469462400 ) LIMIT 1   [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order_test` WHERE  (  status>0 and  status<4  and pay_time >1469376000 and pay_time < 1469462400 ) LIMIT 1   [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order` WHERE  (  status>0 AND status<4  and pay_time >1469376000 and pay_time < 1469462400 ) LIMIT 1   [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=1  and pay_time >1469289600 and pay_time < 1469376000 ) LIMIT 1   [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=2  and pay_time >1469289600 and pay_time < 1469376000 ) LIMIT 1   [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=3  and pay_time >1469289600 and pay_time < 1469376000 ) LIMIT 1   [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order_test` WHERE  (  status>0 and  status<4  and pay_time >1469289600 and pay_time < 1469376000 ) LIMIT 1   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order_test` WHERE  (  status>0 and  status<4  and pay_time >1469289600 and pay_time < 1469376000 ) LIMIT 1   [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order` WHERE  (  status>0 AND status<4  and pay_time >1469289600 and pay_time < 1469376000 ) LIMIT 1   [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=1  ) LIMIT 1   [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=2  ) LIMIT 1   [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=3  ) LIMIT 1   [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order` WHERE  (  status>0 AND status<4  ) LIMIT 1   [ RunTime:0.002559s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` WHERE  `user_level` = 0 LIMIT 1   [ RunTime:0.002327s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` WHERE  `user_level` = 1 LIMIT 1   [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` WHERE  `user_level` = 2 LIMIT 1   [ RunTime:0.001598s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` WHERE  `user_level` = 3 LIMIT 1   [ RunTime:0.002014s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_money_send` WHERE  `status` = 0 LIMIT 1   [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` LIMIT 1   [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001680s ]
+[ error ] [8]未定义索引 : apache[E:\xampp\htdocs\newxy\public\runtime\temp\543048d27c88f12b463abd4f9b08441c.php:122]
+

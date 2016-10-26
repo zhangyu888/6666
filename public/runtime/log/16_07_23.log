@@ -1,0 +1,743 @@
+[ 2016-07-23T14:43:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin
+[ log ] www.xy.com/admin [运行时间：0.090932846069336s] [吞吐率：11.00req/s] [内存消耗：1,781.45kb] [文件加载：40]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 13 - 55
+}
+
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-07-23T14:43:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/login.html
+[ log ] www.xy.com/admin/index/login.html [运行时间：0.044822931289673s] [吞吐率：22.31req/s] [内存消耗：1,654.71kb] [文件加载：35]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 56 - 79
+}
+
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-07-23T14:43:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/verify/
+[ log ] www.xy.com/admin/verify/ [运行时间：0.043810129165649s] [吞吐率：22.83req/s] [内存消耗：790.01kb] [文件加载：22]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'verify',
+    2 => NULL,
+  ),
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Verify.php 6 - 12
+}
+
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+
+[ 2016-07-23T14:44:10+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/index/login.html
+[ log ] www.xy.com/admin/index/login.html [运行时间：0.1018660068512s] [吞吐率：9.82req/s] [内存消耗：1,974.48kb] [文件加载：43]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 56 - 79
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_name` = 'admin' LIMIT 1   [ RunTime:0.002851s ]
+
+[ 2016-07-23T14:44:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ log ] www.xy.com/admin/index/index.html [运行时间：0.13422417640686s] [吞吐率：7.45req/s] [内存消耗：1,890.35kb] [文件加载：39]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 13 - 55
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\index\index.html [ array (
+  0 => 'auth_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.002271s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_auth` WHERE  (  is_show=1 )  [ RunTime:0.001143s ]
+
+[ 2016-07-23T14:44:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/info
+[ log ] www.xy.com/admin/index/info [运行时间：0.20290017127991s] [吞吐率：4.93req/s] [内存消耗：1,999.71kb] [文件加载：44]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'info',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method info ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Index.php 85 - 114
+}
+
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\index\info.html [ array (
+  0 => 'user_status',
+  1 => 'info',
+  2 => 'today_order',
+  3 => 'before_order',
+  4 => 'now_order',
+  5 => 'now_user',
+) ]
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=1  and pay_time >1469203200 and pay_time < 1469289600 ) LIMIT 1   [ RunTime:0.004968s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=2  and pay_time >1469203200 and pay_time < 1469289600 ) LIMIT 1   [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=3  and pay_time >1469203200 and pay_time < 1469289600 ) LIMIT 1   [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order_test` WHERE  (  status>0 and  status<4  and pay_time >1469203200 and pay_time < 1469289600 ) LIMIT 1   [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order_test` WHERE  (  status>0 and  status<4  and pay_time >1469203200 and pay_time < 1469289600 ) LIMIT 1   [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order` WHERE  (  status>0 AND status<4  and pay_time >1469203200 and pay_time < 1469289600 ) LIMIT 1   [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=1  and pay_time >1469116800 and pay_time < 1469203200 ) LIMIT 1   [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=2  and pay_time >1469116800 and pay_time < 1469203200 ) LIMIT 1   [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=3  and pay_time >1469116800 and pay_time < 1469203200 ) LIMIT 1   [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order_test` WHERE  (  status>0 and  status<4  and pay_time >1469116800 and pay_time < 1469203200 ) LIMIT 1   [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order_test` WHERE  (  status>0 and  status<4  and pay_time >1469116800 and pay_time < 1469203200 ) LIMIT 1   [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order` WHERE  (  status>0 AND status<4  and pay_time >1469116800 and pay_time < 1469203200 ) LIMIT 1   [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=1  ) LIMIT 1   [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=2  ) LIMIT 1   [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order` WHERE  (  status=3  ) LIMIT 1   [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order_test` WHERE  (  status>0 and  status<4  ) LIMIT 1   [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT SUM(amount) AS tp_sum FROM `ms_order` WHERE  (  status>0 AND status<4  ) LIMIT 1   [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` WHERE  `user_level` = 0 LIMIT 1   [ RunTime:0.001964s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` WHERE  `user_level` = 1 LIMIT 1   [ RunTime:0.001275s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` WHERE  `user_level` = 2 LIMIT 1   [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` WHERE  `user_level` = 3 LIMIT 1   [ RunTime:0.001206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_money_send` WHERE  `status` = 0 LIMIT 1   [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` LIMIT 1   [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001508s ]
+[ error ] [8]未定义索引 : apache[E:\xampp\htdocs\newxy\public\runtime\temp\543048d27c88f12b463abd4f9b08441c.php:122]
+
+[ 2016-07-23T14:44:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/manager/showlist
+[ log ] www.xy.com/admin/manager/showlist [运行时间：1.2771768569946s] [吞吐率：0.78req/s] [内存消耗：2,090.97kb] [文件加载：46]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'manager',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Manager.php 12 - 17
+}
+
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\manager\showlist.html [ array (
+  0 => 'manager_list',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_auth` WHERE  (  auth_c='CONTROLLER_NAME' and auth_a='ACTION_NAME' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000958s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` ORDER BY admin_id desc  [ RunTime:0.000622s ]
+[ error ] [8]Undefined property: stdClass::$access_token[E:\xampp\htdocs\newxy\application\admin\common.php:49]
+[ error ] [8]Trying to get property of non-object[E:\xampp\htdocs\newxy\application\admin\common.php:57]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:31]
+[ error ] [8]Use of undefined constant ACTION_NAME - assumed 'ACTION_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:32]
+
+[ 2016-07-23T14:44:15+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/database/showlist
+[ log ] www.xy.com/admin/database/showlist [运行时间：0.26795506477356s] [吞吐率：3.73req/s] [内存消耗：1,959.99kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Database.php 13 - 22
+}
+
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\database\showlist.html [ array (
+  0 => 'database_list',
+  1 => 'html_page',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001576s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_auth` WHERE  (  auth_c='CONTROLLER_NAME' and auth_a='ACTION_NAME' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 1   [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 0,20   [ RunTime:0.000622s ]
+[ error ] [8]Undefined property: stdClass::$access_token[E:\xampp\htdocs\newxy\application\admin\common.php:49]
+[ error ] [8]Trying to get property of non-object[E:\xampp\htdocs\newxy\application\admin\common.php:57]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:31]
+[ error ] [8]Use of undefined constant ACTION_NAME - assumed 'ACTION_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:32]
+
+[ 2016-07-23T14:44:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/database/copy_database
+[ log ] www.xy.com/admin/database/copy_database [运行时间：0.42981004714966s] [吞吐率：2.33req/s] [内存消耗：2,074.83kb] [文件加载：49]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'copy_database',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ RUN ] Method [ <user> public method copy_database ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Database.php 25 - 76
+}
+
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_auth` WHERE  (  auth_c='CONTROLLER_NAME' and auth_a='ACTION_NAME' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000894s ]
+[ sql ] [ SQL ] INSERT INTO `ms_database` (`db_name` , `create_time`) VALUES ('12320160723244.sql' , '1469256256')    [ RunTime:0.002872s ]
+[ error ] [8]Undefined property: stdClass::$access_token[E:\xampp\htdocs\newxy\application\admin\common.php:49]
+[ error ] [8]Trying to get property of non-object[E:\xampp\htdocs\newxy\application\admin\common.php:57]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:31]
+[ error ] [8]Use of undefined constant ACTION_NAME - assumed 'ACTION_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:32]
+[ error ] [8192]mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead[E:\xampp\htdocs\newxy\application\admin\controller\Database.php:33]
+
+[ 2016-07-23T14:44:19+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/database/showlist
+[ log ] www.xy.com/admin/database/showlist [运行时间：0.18984508514404s] [吞吐率：5.27req/s] [内存消耗：1,960.59kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Database.php 13 - 22
+}
+
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\database\showlist.html [ array (
+  0 => 'database_list',
+  1 => 'html_page',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001074s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_auth` WHERE  (  auth_c='CONTROLLER_NAME' and auth_a='ACTION_NAME' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 1   [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 0,20   [ RunTime:0.000482s ]
+[ error ] [8]Undefined property: stdClass::$access_token[E:\xampp\htdocs\newxy\application\admin\common.php:49]
+[ error ] [8]Trying to get property of non-object[E:\xampp\htdocs\newxy\application\admin\common.php:57]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:31]
+[ error ] [8]Use of undefined constant ACTION_NAME - assumed 'ACTION_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:32]
+
+[ 2016-07-23T15:05:29+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/database/showlist
+[ log ] www.xy.com/admin/database/showlist [运行时间：0.30431199073792s] [吞吐率：3.29req/s] [内存消耗：1,960.86kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Database.php 13 - 22
+}
+
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\database\showlist.html [ array (
+  0 => 'database_list',
+  1 => 'html_page',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.003575s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_auth` WHERE  (  auth_c='CONTROLLER_NAME' and auth_a='ACTION_NAME' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 1   [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 0,20   [ RunTime:0.000736s ]
+[ error ] [8]Undefined property: stdClass::$access_token[E:\xampp\htdocs\newxy\application\admin\common.php:49]
+[ error ] [8]Trying to get property of non-object[E:\xampp\htdocs\newxy\application\admin\common.php:57]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:31]
+[ error ] [8]Use of undefined constant ACTION_NAME - assumed 'ACTION_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:32]
+
+[ 2016-07-23T15:28:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/database/showlist
+[ log ] www.xy.com/admin/database/showlist [运行时间：0.27648401260376s] [吞吐率：3.62req/s] [内存消耗：1,961.13kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Database.php 13 - 22
+}
+
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\database\showlist.html [ array (
+  0 => 'database_list',
+  1 => 'html_page',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_auth` WHERE  (  auth_c='CONTROLLER_NAME' and auth_a='ACTION_NAME' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.001740s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 1   [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 0,20   [ RunTime:0.000767s ]
+[ error ] [8]Undefined property: stdClass::$access_token[E:\xampp\htdocs\newxy\application\admin\common.php:49]
+[ error ] [8]Trying to get property of non-object[E:\xampp\htdocs\newxy\application\admin\common.php:57]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:31]
+[ error ] [8]Use of undefined constant ACTION_NAME - assumed 'ACTION_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:32]
+
+[ 2016-07-23T15:28:45+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/database/showlist
+[ log ] www.xy.com/admin/database/showlist [运行时间：0.24141812324524s] [吞吐率：4.14req/s] [内存消耗：1,961.13kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'showlist',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => '123',
+  'username' => 'root',
+  'password' => 'root',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'ms_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=123;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] E:\xampp\htdocs\newxy\thinkphp\lang\zh-cn.php
+[ info ] [ RUN ] Method [ <user> public method showlist ] {
+  @@ E:\xampp\htdocs\newxy\application\admin\controller\Database.php 13 - 22
+}
+
+[ info ] [ VIEW ] E:\xampp\htdocs\newxy\public/../application/admin\view\database\showlist.html [ array (
+  0 => 'database_list',
+  1 => 'html_page',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'E:\\xampp\\htdocs\\newxy\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001840s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_id` = '1' LIMIT 1    [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_auth` WHERE  (  auth_c='CONTROLLER_NAME' and auth_a='ACTION_NAME' and auth_id in (1,2,3,4,5)  ) LIMIT 1   [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 1   [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_database` WHERE  (   1  ) ORDER BY db_id desc LIMIT 0,20   [ RunTime:0.000600s ]
+[ error ] [8]Undefined property: stdClass::$access_token[E:\xampp\htdocs\newxy\application\admin\common.php:49]
+[ error ] [8]Trying to get property of non-object[E:\xampp\htdocs\newxy\application\admin\common.php:57]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:31]
+[ error ] [8]Use of undefined constant ACTION_NAME - assumed 'ACTION_NAME'[E:\xampp\htdocs\newxy\application\admin\controller\Admin.php:32]
+

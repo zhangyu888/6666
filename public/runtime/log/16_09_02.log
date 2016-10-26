@@ -1,0 +1,613 @@
+[ 2016-09-02T16:02:18+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.xiangyuan.com/ [运行时间：1.3176491260529s] [吞吐率：0.76req/s] [内存消耗：2,207.83kb] [文件加载：46]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\index\controller\Index.php 9 - 80
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/index\view\index\index.html [ array (
+  0 => 'shop_config',
+  1 => 'contact',
+  2 => 'nav_list',
+  3 => 'count',
+  4 => 'jbcx_list',
+  5 => 'jbys_list',
+  6 => 'jbsl_list',
+  7 => 'best_goods_list',
+  8 => 'notice_list',
+  9 => 'about_us',
+  10 => 'year_options',
+  11 => 'month_options',
+  12 => 'day_options',
+  13 => 'hour_options',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.043502s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.012519s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc LIMIT 5   [ RunTime:0.036125s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `article_id` = 7  AND `status` = 1 LIMIT 1   [ RunTime:0.016083s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 1  AND `status` = 1 ORDER BY create_time desc LIMIT 8   [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc  [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 2  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 3  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 4  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000623s ]
+[ error ] [2]Missing argument 1 for app\index\controller\Goods::get_best_googs_list(), called in D:\xampp\htdocs\xiangyuan\application\index\controller\Index.php on line 43 and defined[D:\xampp\htdocs\xiangyuan\application\index\controller\Goods.php:220]
+[ error ] [8]未定义变量 : num[D:\xampp\htdocs\xiangyuan\application\index\controller\Goods.php:222]
+[ error ] [8]未定义变量 : ceshi[D:\xampp\htdocs\xiangyuan\public\runtime\temp\25cd1be80f08caec3a68f0f4b3f4e21c.php:397]
+
+[ 2016-09-02T16:02:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/user/
+[ log ] www.xiangyuan.com/index/user/ [运行时间：0.15897417068481s] [吞吐率：6.29req/s] [内存消耗：1,968.06kb] [文件加载：42]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => NULL,
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user, overwrites app\index\controller\Wechat, prototype app\index\controller\Wechat> public method index ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\index\controller\User.php 33 - 58
+}
+
+[ info ] [ CACHE ] INIT File:array (
+  'type' => 'File',
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\cache\\',
+  'prefix' => '',
+  'expire' => 0,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'shop_config',
+  1 => 'contact',
+  2 => 'nav_list',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000371s ]
+
+[ 2016-09-02T16:02:26+08:00 ] 127.0.0.1 127.0.0.1 GET /index/user/login.html
+[ log ] www.xiangyuan.com/index/user/login.html [运行时间：0.08610200881958s] [吞吐率：11.61req/s] [内存消耗：2,003.45kb] [文件加载：44]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\index\controller\User.php 405 - 456
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/index\view\user\login.html [ array (
+  0 => 'shop_config',
+  1 => 'contact',
+  2 => 'nav_list',
+  3 => 'best_goods',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc LIMIT 5   [ RunTime:0.000663s ]
+[ error ] [8]未定义变量 : ceshi[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2d836f50ce2530ea9269d90592d16f10.php:56]
+[ error ] [8]未定义索引 : name[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2d836f50ce2530ea9269d90592d16f10.php:116]
+[ error ] [8]未定义索引 : name[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2d836f50ce2530ea9269d90592d16f10.php:116]
+[ error ] [8]未定义索引 : name[D:\xampp\htdocs\xiangyuan\public\runtime\temp\2d836f50ce2530ea9269d90592d16f10.php:116]
+
+[ 2016-09-02T16:02:30+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.xiangyuan.com/ [运行时间：0.075014114379883s] [吞吐率：13.33req/s] [内存消耗：2,207.25kb] [文件加载：46]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\index\controller\Index.php 9 - 80
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/index\view\index\index.html [ array (
+  0 => 'shop_config',
+  1 => 'contact',
+  2 => 'nav_list',
+  3 => 'count',
+  4 => 'jbcx_list',
+  5 => 'jbys_list',
+  6 => 'jbsl_list',
+  7 => 'best_goods_list',
+  8 => 'notice_list',
+  9 => 'about_us',
+  10 => 'year_options',
+  11 => 'month_options',
+  12 => 'day_options',
+  13 => 'hour_options',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc LIMIT 5   [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `article_id` = 7  AND `status` = 1 LIMIT 1   [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 1  AND `status` = 1 ORDER BY create_time desc LIMIT 8   [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc  [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 2  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 3  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 4  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000485s ]
+[ error ] [2]Missing argument 1 for app\index\controller\Goods::get_best_googs_list(), called in D:\xampp\htdocs\xiangyuan\application\index\controller\Index.php on line 43 and defined[D:\xampp\htdocs\xiangyuan\application\index\controller\Goods.php:220]
+[ error ] [8]未定义变量 : num[D:\xampp\htdocs\xiangyuan\application\index\controller\Goods.php:222]
+[ error ] [8]未定义变量 : ceshi[D:\xampp\htdocs\xiangyuan\public\runtime\temp\25cd1be80f08caec3a68f0f4b3f4e21c.php:397]
+
+[ 2016-09-02T16:02:31+08:00 ] 127.0.0.1 127.0.0.1 GET /index/user/register
+[ log ] www.xiangyuan.com/index/user/register [运行时间：0.096250057220459s] [吞吐率：10.39req/s] [内存消耗：2,003.48kb] [文件加载：44]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method register ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\index\controller\User.php 536 - 586
+}
+
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/index\view\user\register.html [ array (
+  0 => 'shop_config',
+  1 => 'contact',
+  2 => 'nav_list',
+  3 => 'best_goods',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc LIMIT 5   [ RunTime:0.000656s ]
+[ error ] [8]未定义变量 : ceshi[D:\xampp\htdocs\xiangyuan\public\runtime\temp\7f3e79eee9b7017890a23d7c28009096.php:220]
+[ error ] [8]未定义索引 : name[D:\xampp\htdocs\xiangyuan\public\runtime\temp\7f3e79eee9b7017890a23d7c28009096.php:293]
+[ error ] [8]未定义索引 : name[D:\xampp\htdocs\xiangyuan\public\runtime\temp\7f3e79eee9b7017890a23d7c28009096.php:293]
+[ error ] [8]未定义索引 : name[D:\xampp\htdocs\xiangyuan\public\runtime\temp\7f3e79eee9b7017890a23d7c28009096.php:293]
+
+[ 2016-09-02T16:02:39+08:00 ] 127.0.0.1 127.0.0.1 POST /index/user/is_registered
+[ log ] www.xiangyuan.com/index/user/is_registered [运行时间：0.20017600059509s] [吞吐率：5.00req/s] [内存消耗：1,879.84kb] [文件加载：37]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'is_registered',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method is_registered ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\index\controller\User.php 589 - 611
+}
+
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_user` WHERE  `user_name` = 'q发生的说法' LIMIT 1   [ RunTime:0.033413s ]
+
+[ 2016-09-02T16:03:09+08:00 ] 127.0.0.1 127.0.0.1 POST /index/user/checkEmail
+[ log ] www.xiangyuan.com/index/user/checkEmail [运行时间：0.063706874847412s] [吞吐率：15.70req/s] [内存消耗：1,879.73kb] [文件加载：37]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'checkEmail',
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method checkEmail ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\index\controller\User.php 613 - 628
+}
+
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_user` WHERE  `email` = 'dfsd' LIMIT 1   [ RunTime:0.014942s ]
+
+[ 2016-09-02T16:03:20+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.xiangyuan.com/ [运行时间：0.17190885543823s] [吞吐率：5.82req/s] [内存消耗：2,207.25kb] [文件加载：46]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ DB ] INIT mysql:array (
+  'type' => 'mysql',
+  'dsn' => '',
+  'hostname' => '127.0.0.1',
+  'database' => 'xy',
+  'username' => 'root',
+  'password' => '',
+  'hostport' => '3306',
+  'params' => 
+  array (
+  ),
+  'charset' => 'utf8mb4',
+  'prefix' => 'xy_',
+  'debug' => true,
+  'deploy' => 0,
+  'rw_separate' => false,
+  'master_num' => 1,
+  'slave_no' => '',
+  'fields_strict' => true,
+  'auto_timestamp' => true,
+)
+[ info ] [ DB ] CONNECT: mysql:dbname=xy;host=127.0.0.1;port=3306;charset=utf8mb4
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ D:\xampp\htdocs\xiangyuan\application\index\controller\Index.php 9 - 80
+}
+
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ VIEW ] D:\xampp\htdocs\xiangyuan\public/../application/index\view\index\index.html [ array (
+  0 => 'shop_config',
+  1 => 'contact',
+  2 => 'nav_list',
+  3 => 'count',
+  4 => 'jbcx_list',
+  5 => 'jbys_list',
+  6 => 'jbsl_list',
+  7 => 'best_goods_list',
+  8 => 'notice_list',
+  9 => 'about_us',
+  10 => 'year_options',
+  11 => 'month_options',
+  12 => 'day_options',
+  13 => 'hour_options',
+) ]
+[ info ] [ LANG ] D:\xampp\htdocs\xiangyuan\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File: array (
+  'path' => 'D:\\xampp\\htdocs\\xiangyuan\\public/runtime\\log\\',
+  'level' => 
+  array (
+  ),
+)
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc LIMIT 5   [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` WHERE  `id` = '1' LIMIT 1    [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort asc  [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `article_id` = 7  AND `status` = 1 LIMIT 1   [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 1  AND `status` = 1 ORDER BY create_time desc LIMIT 8   [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods` INNER JOIN xy_category ON xy_category.cate_id = xy_goods.cate_id  WHERE  `is_best` = 1 ORDER BY update_time desc  [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 2  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 3  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_article` WHERE  `cat_id` = 4  AND `status` = 1 ORDER BY create_time desc LIMIT 10   [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_nav` WHERE  `is_show` = 1 ORDER BY sort  [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_config` LIMIT 1   [ RunTime:0.000474s ]
+[ error ] [2]Missing argument 1 for app\index\controller\Goods::get_best_googs_list(), called in D:\xampp\htdocs\xiangyuan\application\index\controller\Index.php on line 43 and defined[D:\xampp\htdocs\xiangyuan\application\index\controller\Goods.php:220]
+[ error ] [8]未定义变量 : num[D:\xampp\htdocs\xiangyuan\application\index\controller\Goods.php:222]
+[ error ] [8]未定义变量 : ceshi[D:\xampp\htdocs\xiangyuan\public\runtime\temp\25cd1be80f08caec3a68f0f4b3f4e21c.php:397]
+
